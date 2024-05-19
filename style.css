@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #f3faf8;
+}
+
+.container {
+  width: calc(100% - 1rem);
+  max-width: 1020px;
+  /* background-color: #fff; */
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 1px solid black; */
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.line {
+  height: 1px;
+  background-color: black;
+  max-width: 600px;
+}
+
+.flash-card-input {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.8rem;
+  font-size: 1.3rem;
+}
+
+form button {
+  color: #08100e;
+  background-color: #46bc9d;
+  border: none;
+  padding: 0.5rem 1.5rem;
+  font-size: 1.1rem;
+  display: block;
+  margin: 2rem auto 0;
+}
+
+h1 {
+  text-align: center;
+  color: #08100e;
+  margin-bottom: 2rem;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 1.5rem;
+  padding-bottom: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.card {
+  background-color: #92dfcb;
+  padding: 1.5rem 1.5rem 1rem;
+  position: relative;
+}
+
+.ques {
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-top: 0.5rem;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+}
+
+.ans {
+  margin-top: 0.8rem;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+}
+
+.sub {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #e63946;
+  color: #f1faee;
+  padding: 0.3rem;
+  font-size: 14px;
+}
+
+.small {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.toggle {
+  padding: .5rem 1.5rem;
+  color: white;
+  background-color: black;
+  border: none;
+  cursor: pointer;
+}
+
+.visible {
+  visibility: hidden;
+}
+
+.delete {
+  cursor: pointer;
+}
+
+.idk {
+  margin-top: 5rem;
+}
+
+input {
+  padding: 0.5rem;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #08100e;
+  background-color: transparent;
+}
+
+textarea {
+  width: 100%;
+  padding: 1rem;
+}
+
+.form-input {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1.5rem;
+  margin-bottom: 2rem;
+  padding: 1rem;
+}
+
+.quantity {
+  text-align: center;
+  background-color: black;
+  color: white;
+  font-size: 18px;
+  padding: 1rem;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 20px;
+  margin: 0 auto 2rem;
+  height: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .form-input {
+    grid-template-columns: 1fr 1fr;
+  }
+}
