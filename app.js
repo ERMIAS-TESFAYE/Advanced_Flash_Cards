@@ -41,10 +41,11 @@ function currentDay() {
       break;
     case 7:
       currentDay = days[6];
+
       break;
 
     default:
-      // currentDay = null;
+      currentDay = null;
       break;
   }
   return currentDay;
