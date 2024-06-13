@@ -11,7 +11,43 @@ function currentTime() {
   minute = minute < 10 ? '0' + minute : minute;
   second = second < 10 ? '0' + second : second;
 
-  timeDisplay.innerText = hour + ':' + minute + ':' + second;
+  timeDisplay.innerText =
+    hour + ':' + minute + ':' + second + ' ' + currentDay();
+}
+
+function currentDay() {
+  const day = new Date();
+  key = day.getDay();
+  let currentDay = null;
+
+  switch (key) {
+    case 1:
+      currentDay = days[0];
+      break;
+    case 2:
+      currentDay = days[1];
+      break;
+    case 3:
+      currentDay = days[2];
+      break;
+    case 4:
+      currentDay = days[3];
+      break;
+    case 5:
+      currentDay = days[4];
+      break;
+    case 6:
+      currentDay = days[5];
+      break;
+    case 7:
+      currentDay = days[6];
+      break;
+
+    default:
+      // currentDay = null;
+      break;
+  }
+  return currentDay;
 }
 
 setInterval(currentTime, 1000);

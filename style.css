@@ -137,6 +137,7 @@ input {
 textarea {
   width: 100%;
   padding: 1rem;
+  resize: none;
 }
 
 .form-input {
